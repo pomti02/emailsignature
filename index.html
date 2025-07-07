@@ -1,214 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Archie Torres - Business Card</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #fff;
-    }
-
-    .card-container {
-      position: relative;
-      width: 100%;
-      max-width: 1200px;
-      height: 300px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      padding: 0 30px;
-      box-sizing: border-box;
-    }
-
-    .phone {
-      position: absolute;
-      width: 140px;
-      z-index: 1;
-    }
-    .phone.left {
-      bottom: 0;
-      left: 0;
-      transform: rotate(-20deg);
-    }
-    .phone.right {
-      position: absolute;
-      width: 300px;
-      top: 0;
-      right: 0;
-      transform: rotate(0deg);
-    }
-
-    .info-left {
-      padding-left: 180px;
-      z-index: 2;
-      flex: 1;
-    }
-    .info-left h1 {
-      margin: 0;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    .info-left .role {
-      margin: 5px 0 20px;
-      font-size: 18px;
-    }
-    .info-left .company-name {
-      font-size: 12px;
-      color: #006b3c;
-      font-weight: bold;
-    }
-    .info-left .subtext {
-      font-size: 11px;
-      margin-bottom: 10px;
-    }
-
-    .divider {
-      width: 2px;
-      height: 215px;
-      background-color: #201f1c;
-      margin: 0 20px;
-    }
-
-    .info-right {
-      flex: 2;
-      z-index: 2;
-      font-size: 14px;
-    }
-
-    .horizontal-line {
-      border: 1px solid #201f1c;
-      width: 50%;
-      margin: 20px 0 15px;
-
-
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      margin: 6px 0;
-    }
-    .contact-item img {
-      width: 18px;
-      height: 18px;
-      margin-right: 10px;
-    }
-
-    .oppo-logo {
-      margin: 0;
-      padding: 0;
-      width: 300px;
-      height: auto;
-    }
-
-    .contact-item a {
-      color: #000;
-      text-decoration: none;
-      font-size: inherit;
-    }
-
-    .contact-item a:hover {
-      text-decoration: underline;
-    }
-
-    .address a {
-      color: #000;
-      text-decoration: none;
-    }
-
-    .address a:hover {
-      text-decoration: underline;
-    }
-    .phone.right {
-      position: absolute;
-      width: 250px;
-      top: 50%; /* Move down to the middle vertically */
-      left: 88%; /* Center horizontally */
-      transform: translate(-50%, -50%); /* Adjust for center alignment */
-    }
-  </style>
-</head>
-
-<body>
-  <div class="card-container">
-    <!-- Left phone image optional -->
-    <!-- <img src="left-phone.png" alt="Left Phone" class="phone left"> -->
-
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    @font-face {
-      font-family: 'OPPO Sans 3.0 VF';
-      src: url('OPPO_Sans_3.0_VF.ttf') format('truetype');
-      font-weight: 100 900;
-      font-style: normal;
-    }
-    
-    .info-left,
-    .info-right,
-    .info-left h1,
-    .info-left p,
-    .info-right p,
-    .info-right a,
-    .info-right span {
-      font-family: 'OPPO Sans 3.0 VF', sans-serif;
-      color: #201f1c;
-    }
-  </style>
-</head>
-<body>
-  <div class="info-left">
-    <h1>Archie Torres</h1>
-    <p class="role">IT Administrator</p>
-    <img src="temp-6.png" alt="Oppo Logo" class="oppo-logo">
+<div style="font-family: Arial, sans-serif; max-width: 1200px; margin: 0; padding: 0 30px; display: flex; align-items: center;">
+  <div style="padding-left: 180px; flex: 1;">
+    <h1 style="margin: 0; font-size: 28px; font-weight: bold; color: #201f1c;">%%DisplayName%%</h1>
+    <p style="margin: 5px 0 20px; font-size: 18px; color: #201f1c;">%%Title%%</p>
+    <img src="https://email-signature.vercel.app/temp-6.png" alt="Oppo Logo" style="width: 300px; height: auto;">
   </div>
-
-  <div class="divider"></div>
-
-  <div class="info-right">
-    <p class="address">
-      <a href="https://www.google.com/maps?q=Arthaland+Century+Pacific+Tower,+5th+Ave+corner+4th+Ave+corner+30th+Street,+Bonifacio+Global+City,+Taguig+City,+Philippines" target="_blank">
+  <div style="width: 2px; height: 215px; background-color: #201f1c; margin: 0 20px;"></div>
+  <div style="flex: 2; font-size: 14px; color: #201f1c;">
+    <p style="margin: 0;">
+      <a href="https://www.google.com/maps?q=Arthaland+Century+Pacific+Tower,+5th+Ave+corner+4th+Ave+corner+30th+Street,+Bonifacio+Global+City,+Taguig+City,+Philippines" target="_blank" style="color: #000; text-decoration: none;">
         28th Flr. Arthaland Century Pacific Tower<br>
         5th Ave. corner 4th Ave. corner 30th Street.<br>
-        Bonifacio Global City Taguig City, Philippines.<br>
-        
+        Bonifacio Global City Taguig City, Philippines.
       </a>
     </p>
-    <hr class="horizontal-line" />
-
-    <div class="contact-item">
-      <img src="icon-phone.png" alt="Phone">
+    <hr style="border: 1px solid #201f1c; width: 50%; margin: 20px 0 15px;">
+    <div style="display: flex; align-items: center; margin: 6px 0;">
+      <img src="https://email-signature.vercel.app/icon-phone.png" alt="Phone" style="width: 18px; height: 18px; margin-right: 10px;">
       <span>(02) 8852 0204 - 129</span>
     </div>
-
-    <div class="contact-item">
-      <img src="icon-mobile.png" alt="Mobile">
-      <span>+63976-163-5895</span>
+    <div style="display: flex; align-items: center; margin: 6px 0;">
+      <img src="https://email-signature.vercel.app/icon-mobile.png" alt="Mobile" style="width: 18px; height: 18px; margin-right: 10px;">
+      <span>%%MobilePhone%%</span>
     </div>
-
-    <div class="contact-item">
-      <img src="icon-email.png" alt="Email">
-      <a href="mailto:itdepartment@oppo-aed.ph">itdepartment@oppo-aed.ph</a>
+    <div style="display: flex; align-items: center; margin: 6px 0;">
+      <img src="https://email-signature.vercel.app/icon-email.png" alt="Email" style="width: 18px; height: 18px; margin-right: 10px;">
+      <a href="mailto:%%Email%%" style="color: #000; text-decoration: none;">%%Email%%</a>
     </div>
-
-    <div class="contact-item">
-      <img src="icon-web.png" alt="Web">
-      <a href="https://www.oppo.com/https://www.facebook.com/OPPOPhilippines/" target="_blank">www.oppo.com/ph</a>
+    <div style="display: flex; align-items: center; margin: 6px 0;">
+      <img src="https://email-signature.vercel.app/icon-web.png" alt="Web" style="width: 18px; height: 18px; margin-right: 10px;">
+      <a href="https://www.oppo.com/ph" target="_blank" style="color: #000; text-decoration: none;">www.oppo.com/ph</a>
     </div>
-
-    <div class="contact-item">
-      <img src="icon-fb.png" alt="Facebook">
-      <a href="https://www.facebook.com/OPPOPhilippines/" target="_blank">facebook.com//OPPOPhilippines</a>
+    <div style="display: flex; align-items: center; margin: 6px 0;">
+      <img src="https://email-signature.vercel.app/icon-fb.png" alt="Facebook" style="width: 18px; height: 18px; margin-right: 10px;">
+      <a href="https://www.facebook.com/OPPOPhilippines/" target="_blank" style="color: #000; text-decoration: none;">facebook.com/OPPOPhilippines</a>
     </div>
-
-  <a href="https://www.oppo.com/en/smartphones/series-reno/reno14/" target="_blank">
-  <img src="logo-mztc.png" alt="Right Phone" class="phone right">
-</a>
-</body>
-</html>
-</body>
-</html>
+    <a href="https://www.oppo.com/en/smartphones/series-reno/reno14/" target="_blank">
+      <img src="https://email-signature.vercel.app/logo-mztc.png" alt="Right Phone" style="width: 250px; position: absolute; top: 50%; left: 88%; transform: translate(-50%, -50%);">
+    </a>
+    <p style="font-size: 7pt; line-height: 8pt; color: #959595; text-align: justify; padding-top: 10px;">
+      The content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.
+    </p>
+  </div>
+</div>
